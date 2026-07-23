@@ -91,6 +91,12 @@ export const TRADE_ITEMS = {
             items: [{ item: "mysrpg:frostball_rune", amount: 1 }]
         },
         {
+            name: "Freeze Breath Rune",
+            icon: "textures/items/freezebreath",
+            price: 90,
+            items: [{ item: "mysrpg:freezebreath_rune", amount: 1 }]
+        },
+        {
             name: "Sanctuary Rune",
             icon: "textures/items/sanctuary",
             price: 100,

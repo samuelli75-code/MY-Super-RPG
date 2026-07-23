@@ -18,6 +18,7 @@
     "icebolt_rune": { "textures": "textures/items/icebolt" },
     "flameburst_rune": { "textures": "textures/items/flameburst" },
     "frostball_rune": { "textures": "textures/items/frostball" },
+    "freezebreath_rune": { "textures": "textures/items/freezebreath" },
     "healing_rune": { "textures": "textures/items/healing" },
     "sanctuary_rune": { "textures": "textures/items/sanctuary" },
     "lightningstrike_rune": { "textures": "textures/items/lightningstrike" }
