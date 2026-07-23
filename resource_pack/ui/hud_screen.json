@@ -1,0 +1,24 @@
+{
+  "namespace": "hud",
+
+  "heart_renderer@hud.heart_renderer": {
+    "ignored": true,
+    "size": [0, 0],
+    "alpha": 0,
+    "bindings": []
+  },
+
+  "horse_heart_renderer@hud.horse_heart_renderer": {
+    "ignored": true,
+    "size": [0, 0],
+    "alpha": 0,
+    "bindings": []
+  },
+
+  "hunger_renderer@hud.hunger_renderer": {
+    "ignored": true,
+    "size": [0, 0],
+    "alpha": 0,
+    "bindings": []
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mysrpg:class_book"
+    },
+    "components": {
+      "minecraft:icon": "class_book",
+      "minecraft:display_name": {
+        "value": "\u00a7dClass Book"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": true,
+      "minecraft:use_modifiers": {
+        "use_duration": 1.0,
+        "movement_modifier": 1.0
+      }
+    }
+  }
+}

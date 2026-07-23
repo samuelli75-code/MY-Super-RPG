@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mysrpg:healing_rune",
+      "menu_category": { "category": "items" }
+    },
+    "components": {
+      "minecraft:icon": "healing_rune",
+      "minecraft:display_name": { "value": "\u00a7aHealing Rune" },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": true,
+      "minecraft:allow_off_hand": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mysrpg:bill",
+      "menu_category": { "category": "items" }
+    },
+    "components": {
+      "minecraft:icon": "bill",
+      "minecraft:display_name": { "value": "§aBill" },
+      "minecraft:max_stack_size": 64,
+      "minecraft:foil": false,
+      "minecraft:fire_resistant": true
+    }
+  }
+}
