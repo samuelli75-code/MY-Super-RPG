@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "My Super RPG Resource Pack",
+    "description": "Textures and Icons",
+    "uuid": "15049224-2afb-4110-ba1d-5205b6c60ecf",
+    "version": [
+      1,
+      1,
+      13
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Resources",
+      "type": "resources",
+      "uuid": "05947889-9889-4f8f-90a4-6587d90a26ad",
+      "version": [
+        1,
+        1,
+        13
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "08e1499a-af77-4038-867f-3802c870f721",
+      "version": [
+        1,
+        1,
+        13
+      ]
+    }
+  ]
+}

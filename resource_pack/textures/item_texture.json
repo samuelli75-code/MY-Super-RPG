@@ -1,0 +1,26 @@
+{
+  "resource_pack_name": "My Super RPG",
+  "texture_name": "atlas.items",
+
+  "texture_data": {
+    "coin": { "textures": "textures/items/coin" },
+    "coin_copper": { "textures": "textures/items/coin_copper" },
+    "coin_silver": { "textures": "textures/items/coin_silver" },
+    "coin_gold": { "textures": "textures/items/coin_gold" },
+    "coin_platinum": { "textures": "textures/items/coin_platinum" },
+    "bill": { "textures": "textures/items/bill" },
+    "piggy_bank": { "textures": "textures/items/piggy_bank" },
+    "class_book": { "textures": "textures/items/class_book" },
+    "wand": { "textures": "textures/items/wand" },
+    "staff": { "textures": "textures/items/staff" },
+    "scepter": { "textures": "textures/items/scepter" },
+    "firebolt_rune": { "textures": "textures/items/firebolt" },
+    "icebolt_rune": { "textures": "textures/items/icebolt" },
+    "flameburst_rune": { "textures": "textures/items/flameburst" },
+    "frostball_rune": { "textures": "textures/items/frostball" },
+    "freezebreath_rune": { "textures": "textures/items/freezebreath" },
+    "healing_rune": { "textures": "textures/items/healing" },
+    "sanctuary_rune": { "textures": "textures/items/sanctuary" },
+    "lightningstrike_rune": { "textures": "textures/items/lightningstrike" }
+  }
+}

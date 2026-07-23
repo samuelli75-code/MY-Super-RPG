@@ -1,0 +1,50 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "My Super RPG Behavior Pack",
+    "description": "Super RPG System",
+    "uuid": "08e1499a-af77-4038-867f-3802c870f721",
+    "version": [
+      1,
+      1,
+      13
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "822cdbb3-7d28-4600-9cac-a489de61b21f",
+      "version": [
+        1,
+        1,
+        13
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "31c88dc8-64e7-479c-b5a2-f6c3dbdc138a",
+      "version": [
+        1,
+        1,
+        13
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.10.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.3.0"
+    }
+  ]
+}

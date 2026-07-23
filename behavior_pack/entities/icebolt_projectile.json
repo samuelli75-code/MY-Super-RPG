@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mysrpg:icebolt_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["projectile", "spell_projectile"]
+      },
+      "minecraft:collision_box": {
+        "width": 0.3,
+        "height": 0.3
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:projectile": {
+        "power": 1.0,
+        "gravity": 0.0,
+        "uncertainty_base": 0.0,
+        "uncertainty_multiplier": 0.0,
+        "should_bounce": false,
+        "multiple_targets": false
+      }
+    }
+  }
+}
