@@ -16,6 +16,11 @@ import { areFriendly } from "./team_system.js";
 import { recordCombatFeedback } from "./combat_feedback.js";
 import { recordCombatCredit } from "./combat_credit.js";
 import { isSpellProjectile } from "../spells/spell_projectile.js";
+import {
+    getPurpleGolemAttackDamage,
+    isPurpleGolem,
+    scaleMobIncomingDamage
+} from "./mob_resistances.js";
 
 function restoreFriendlyDamage(entity, amount) {
     if (entity.typeId === "minecraft:player") {
@@ -168,6 +173,8 @@ function handlePlayerVictim(event, player, attacker, projectile) {
         projectile?.typeId === "minecraft:arrow"
     ) {
         damage = getProjectileDamage(event, attacker);
+    } else if (isPurpleGolem(attacker)) {
+        damage = getPurpleGolemAttackDamage(attacker);
     }
 
     const result = modifyIncomingCombatDamage(
@@ -203,8 +210,14 @@ function handleNonPlayerVictim(event, entity, attacker, projectile) {
     let desiredDamage;
     if (!projectile) {
         desiredDamage = getPlayerMeleeDamageAfterArmor(event, attacker);
+        desiredDamage = scaleMobIncomingDamage(entity, desiredDamage, "melee");
     } else if (projectile.typeId === "minecraft:arrow") {
         desiredDamage = getProjectileDamage(event, attacker);
+        desiredDamage = scaleMobIncomingDamage(
+            entity,
+            desiredDamage,
+            "projectile"
+        );
     } else {
         return;
     }

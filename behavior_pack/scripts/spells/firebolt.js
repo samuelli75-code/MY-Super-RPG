@@ -1,6 +1,7 @@
 import { dealCustomPlayerDamage } from "../systems/combat_system.js";
 import { areFriendly } from "../systems/team_system.js";
 import { recordCombatFeedback } from "../systems/combat_feedback.js";
+import { scaleMobIncomingDamage } from "../systems/mob_resistances.js";
 import { castWithCostAndCooldown } from "./spell_casting.js";
 import {
     launchSpellProjectile,
@@ -19,9 +20,18 @@ function burnHit(owner, victim, location) {
         if (victim.typeId === "minecraft:player") {
             dealCustomPlayerDamage(victim, BASE_DAMAGE, owner, "fire");
         } else {
+            const resistedDamage = scaleMobIncomingDamage(
+                victim,
+                BASE_DAMAGE,
+                "magic"
+            );
+            if (resistedDamage <= 0) return;
+
             const health = victim.getComponent("minecraft:health");
-            const actualDamage = health ? Math.min(health.currentValue, BASE_DAMAGE) : BASE_DAMAGE;
-            victim.applyDamage(BASE_DAMAGE, {
+            const actualDamage = health
+                ? Math.min(health.currentValue, resistedDamage)
+                : resistedDamage;
+            victim.applyDamage(resistedDamage, {
                 cause: "fire",
                 damagingEntity: owner
             });

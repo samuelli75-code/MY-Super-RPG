@@ -6,6 +6,7 @@ import { getMaxHp, syncPlayerHealth } from "../systems/stats_system.js";
 import { reviveDownedPlayer } from "../systems/death_system.js";
 import { recordCombatCredit } from "../systems/combat_credit.js";
 import { playSound, spawnParticle } from "./spell_projectile.js";
+import { scaleMobIncomingDamage } from "../systems/mob_resistances.js";
 
 const IGNORED_ENTITY_TYPES = new Set([
     "minecraft:item",
@@ -41,9 +42,14 @@ export function damageSpellTarget(owner, target, damage, cause = "magic") {
         return true;
     }
 
+    const resistedDamage = scaleMobIncomingDamage(target, damage, "magic");
+    if (resistedDamage <= 0) return false;
+
     const health = target.getComponent("minecraft:health");
-    const actualDamage = health ? Math.min(health.currentValue, damage) : damage;
-    target.applyDamage(damage, {
+    const actualDamage = health
+        ? Math.min(health.currentValue, resistedDamage)
+        : resistedDamage;
+    target.applyDamage(resistedDamage, {
         cause,
         damagingEntity: owner
     });

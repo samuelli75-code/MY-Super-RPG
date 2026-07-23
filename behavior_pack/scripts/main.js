@@ -14,6 +14,8 @@ import "./systems/hud.js";
 import "./systems/rewards.js";
 import "./systems/spwaner_system.js";
 
+import "./bosses/purple_golem.js";
+
 import "./items/class_books.js";
 import "./items/piggy_bank.js";
 import "./items/spellcasting_weapons.js";

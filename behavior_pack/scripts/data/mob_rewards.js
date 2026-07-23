@@ -75,5 +75,6 @@ export const MOB_REWARDS = {
     ]),
     "minecraft:ender_dragon": reward(100, 50, [
         { id: "minecraft:dragon_breath", amount: 1 }
-    ])
+    ]),
+    "mysrpg:purple_golem": reward(150, 400)
 };

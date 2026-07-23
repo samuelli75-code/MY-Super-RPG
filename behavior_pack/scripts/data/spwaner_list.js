@@ -21,5 +21,30 @@ export const SPAWNER_LIST = [
         permanent: true,
         placeCampfire: true,
         extraTags: ["shop:camp_shop"]
+    },
+    {
+        id: "purple_golem",
+        entityTypeId: "mysrpg:purple_golem",
+        tag: "mysrpg_spawner_purple_golem",
+        nameTag: "Purple Golem",
+        spawnMessage: "A Purple Golem boss has appeared nearby!",
+        dimensionIds: ["minecraft:overworld"],
+        minAbsoluteTime: 48000,
+        daylightOnly: false,
+        spawnArea: {
+            mode: "around_player_safe",
+            radius: 160,
+            preferredRadius: 56,
+            minDistance: 28,
+            attempts: 40,
+            ySearchUp: 24,
+            ySearchDown: 64
+        },
+        maxDistanceFromSpawn: 200,
+        aliveTicks: 12000,
+        respawnTicks: 18000,
+        permanent: false,
+        placeCampfire: false,
+        extraTags: ["mysrpg_boss"]
     }
 ];
