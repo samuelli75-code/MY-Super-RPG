@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mysrpg:camp_merchant",
+      "materials": {
+        "default": "villager_v2"
+      },
+      "textures": {
+        "default": "textures/entity/villager2/villager"
+      },
+      "geometry": {
+        "default": "geometry.villager_v2"
+      },
+      "animations": {
+        "move": "animation.villager.move",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
+
