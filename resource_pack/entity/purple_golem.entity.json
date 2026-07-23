@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mysrpg:purple_golem",
+      "materials": {
+        "default": "iron_golem"
+      },
+      "textures": {
+        "default": "textures/entity/iron_golem/iron_golem"
+      },
+      "geometry": {
+        "default": "geometry.irongolem"
+      },
+      "animations": {
+        "walk": "animation.iron_golem.walk",
+        "move": "animation.iron_golem.move",
+        "attack": "animation.iron_golem.attack",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          "walk",
+          "attack",
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.iron_golem"
+      ],
+      "spawn_egg": {
+        "base_color": "#6b2d9b",
+        "overlay_color": "#c084fc"
+      }
+    }
+  }
+}

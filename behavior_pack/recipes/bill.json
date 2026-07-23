@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.80",
+
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "mysrpg:bill_recipe"
+    },
+
+    "tags": [
+      "crafting_table"
+    ],
+
+    "pattern": [
+      "AAA",
+      "A A",
+      "AAA"
+    ],
+
+    "key": {
+      "A": {
+        "item": "mysrpg:coin_platinum"
+      }
+    },
+
+    "unlock": [
+      {
+        "item": "mysrpg:coin_platinum"
+      }
+    ],
+
+    "result": {
+      "item": "mysrpg:bill",
+      "count": 1
+    }
+  }
+}

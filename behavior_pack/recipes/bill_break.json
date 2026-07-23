@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.80",
+
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "mysrpg:bill_break"
+    },
+
+    "tags": [
+      "crafting_table"
+    ],
+
+    "ingredients": [
+      {
+        "item": "mysrpg:bill"
+      }
+    ],
+
+    "unlock": [
+      {
+        "item": "mysrpg:bill"
+      }
+    ],
+
+    "result": {
+      "item": "mysrpg:coin_platinum",
+      "count": 8
+    }
+  }
+}

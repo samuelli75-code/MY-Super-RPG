@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.80",
+
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "mysrpg:piggy_bank_recipe"
+    },
+
+    "tags": [
+      "crafting_table"
+    ],
+
+    "pattern": [
+      "AA",
+      "AA"
+    ],
+
+    "key": {
+      "A": {
+        "item": "mysrpg:coin"
+      }
+    },
+
+    "unlock": [
+      {
+        "item": "mysrpg:coin"
+      }
+    ],
+
+    "result": {
+      "item": "mysrpg:piggy_bank",
+      "count": 1
+    }
+  }
+}
